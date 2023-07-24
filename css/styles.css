@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 100px;
+  }
+
+  
+  
+  .logo {
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    transition: filter 0.3s ease;
+  }
+
+  
+  
+  .logo:hover {
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    filter: brightness(1.2);
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(65,195,212);
+color:linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+  }
+
+  nav ul li .btn-comprar {
+    text-decoration: none !important;
+  }
+
+
+  nav ul li .btn-comprar:hover {
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+  
+  .menu-hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  main {
+    padding: 20px;
+    background-image: url('/assets/img/fundo.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  main p {
+    color: white;
+  }
+
+  main h1 {
+    color: white;
+  }
+  
+  .btn-comprar {
+    display: inline-block;
+    background: rgb(65,195,212);
+background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background: rgb(65,195,212);
+background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+
+    filter: brightness(1.2);
+  }
+
+  .btn-ler {
+    display: inline-block;
+    border: 2px solid rgb(65,195,212);
+   color: rgb(65,195,212);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+  }
+  
+  .btn-ler:hover {
+    border: 2px solid rgb(65,195,212);
+    color: white;
+    background: rgb(65,195,212);
+background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+
+    filter: brightness(1.2);
+  }
+  
+  
+  
+  footer {
+    border-radius: 20px 20px 0px 0px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer p {
+    color: white;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgb(65,195,212);
+  }
+
+
+
+  
+  /* Media Query para menu hamburguer */
+  @media screen and (max-width: 768px) {
+    .menu-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #000;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      padding: 20px 42px;
+    }
+  
+    .menu-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .menu-hamburger {
+      display: block;
+    }
+  
+    .menu-links .btn-comprar {
+      display: block;
+      margin-top: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+
+    .logo {
+      cursor: pointer;
+      font-weight: bold;
+      width: 90px;
+      transition: filter 0.3s ease;
+    }
+
+    .logo:hover {
+      cursor: pointer;
+      font-weight: bold;
+      width: 90px;
+      transition: filter 0.3s ease;
+    }
+  }
+  
+  .center-align {
+    text-align: center;
+  }
+  
+#contacto {
+  padding: 20px;
+}
+
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    background: rgb(65,195,212);
+background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: rgb(65,195,212);
+    background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+    filter: brightness(1.2);
+  }
+
+  #sobre {
+    background-color: #000;
+    padding: 20px 0px;
+    
+  }
+
+  #sobre .pwhite {
+    color: #fff;
+  }
+
+  #sobre h2  {
+    color: rgb(65,195,212);
+color:linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+font-size: 30px;
+
+    padding: 0px;
+  }
+  
+  #cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card {
+    cursor: pointer;
+    max-width: 300px;
+    border: 1px solid rgb(65,195,212);
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    filter: brightness(1.3);
+  }
+  
+  .card.blur {
+    filter: blur(4px);
+  }
+
+  .card p {
+    color: white;
+  }
+
+  .card h3 {
+    color: white;
+  }
+  
+
+  .welcome-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 60px;
+  }
+  
+  .welcome-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .welcome-content h1 {
+    margin-bottom: 10px;
+  }
+  
+  .ebook-image {
+    flex: 1;
+    text-align: center;
+    
+  }
+  
+  .ebook-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    min-width: 500px;
+  }
+  .image-introdution {
+    flex: 1;
+    text-align: center;
+    min-width: 500px;
+  }
+  .introdution-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 60px;
+  }
+
+  /* Media Query responsivo*/
+
+  @media only screen and (max-width: 768px) {
+    .ebook-image img {
+      min-width: 300px;
+    }
+    .image-introdution {
+      min-width: 300px;
+    }
+
+    .welcome-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 10px;
+    }
+
+    main {
+      padding: 5px;
+      background-image: url('/assets/img/fundo-2.png');
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .justify-text{
+      text-align: justify;
+    }
+
+
+    .introdution-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0px 10px;
+      text-align: center;
+    }
+
+    .introdution-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    #sobre .pwhite {
+      color: #fff;
+      margin: 20px;
+    }
+
+    #sobre {
+      background-color: #000;
+      padding: 1px 0px;
+
+  }
+}
+
+ /* Media Query responsivo*/
+  
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;  }
+  
+  .image-introdution img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .image-introdution img:hover{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 50px;
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: brightness(1.1);
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .popup-content h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content form input,
+  .popup-content form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .popup-content form input[type="file"] {
+    cursor: pointer;
+  }
+  
+  .popup-content form button {
+    background: rgb(65,195,212);
+    background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+    
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-content form button:hover {
+    background: rgb(65,195,212);
+background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+
+    filter: brightness(1.2);
+  }
+  
+  .popup-content form button.close-button {
+    background-color: #ccc;
+    color: #000;
+    margin-top: 20px;
+  }
+
+  .close-button {
+    width: 40px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+
+  .close-button:hover {
+    width: 40px;
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+
+  
+
+  .redes-sociais {
+    margin: 20px 0; /* Espaçamento entre os ícones */
+  }
+  
+  .redes-sociais a {
+    display: inline-block; /* Os links ficam lado a lado */
+    margin: 0 10px; /* Espaçamento entre os links */
+  }
+  
+  .redes-sociais img {
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: 30px; /* Ajuste a altura conforme necessário */
+  }
+
+
+  
+  .introdution-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .introdution-content h2 {
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: rgb(65,195,212);
+    color:linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%);
+    font-weight: 600;
+  }
+
+  .justify-text{
+    text-align: justify;
+  }
+ 
+  ::placeholder{font-family: 'Quicksand', sans-serif;}
