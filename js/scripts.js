@@ -7,6 +7,7 @@ function toggleMenu() {
     }
 }
 
+
 function openPopup() {
     var popup = document.getElementById("popupForm");
     popup.style.display = "block";
