@@ -7,8 +7,14 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
   
   .container {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -314,7 +320,7 @@ font-size: 30px;
   
   .welcome-content {
     flex: 1;
-    padding: 20px;
+   padding: 20px;
   }
   
   .welcome-content h1 {
@@ -328,6 +334,7 @@ font-size: 30px;
   }
   
   .ebook-image img {
+    margin-top: 60px;
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -359,7 +366,10 @@ font-size: 30px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 50px;
     }
 
     main {
