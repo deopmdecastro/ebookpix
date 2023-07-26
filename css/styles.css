@@ -447,6 +447,7 @@ font-size: 30px;
   }
 
   .popup {
+    
     display: none;
     position: fixed;
     top: 0;
@@ -454,7 +455,7 @@ font-size: 30px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    z-index: 2000;
   }
   
   .popup-content {
@@ -545,7 +546,7 @@ background: linear-gradient(90deg, rgba(65,195,212,1) 0%, rgba(0,159,210,1) 100%
   
   .introdution-content {
     flex: 1;
-    padding: 30px;
+    padding: 40px;
   }
   
   .introdution-content h2 {
