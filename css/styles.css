@@ -11,6 +11,7 @@ body {
   header {
     position: fixed;
     width: 100%;
+    z-index: 1000;
   }
   
   .container {
@@ -420,6 +421,7 @@ font-size: 30px;
     margin: 10px;  }
   
   .image-introdution img {
+    
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -429,6 +431,7 @@ font-size: 30px;
   }
 
   .image-introdution img:hover{
+    
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -436,6 +439,7 @@ font-size: 30px;
     transform: scale(1.1);
     cursor: pointer;
     filter: brightness(1.1);
+
   }
 
   h2{
